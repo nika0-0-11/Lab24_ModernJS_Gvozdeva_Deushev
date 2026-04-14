@@ -131,28 +131,46 @@
 
 // 7.5. Практическое задание
 
-const arr1 = [1, 2, 3, 4, 5];
-const arr2 = [6, 7, 8, 9, 10];
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [6, 7, 8, 9, 10];
 
-const arrAll = [...arr1, ...arr2];
-console.log("Объединенны массив:", arrAll);
+// const arrAll = [...arr1, ...arr2];
+// console.log("Объединенны массив:", arrAll);
 
-function findMax(...numbers) {
-    return Math.max(...numbers);
-}
+// function findMax(...numbers) {
+//     return Math.max(...numbers);
+// }
 
-console.log(findMax(...arrAll));
+// console.log(findMax(...arrAll));
 
 
-const obj1 = {
-    name: "Nika",
-    age: 18,
-};
+// const obj1 = {
+//     name: "Nika",
+//     age: 18,
+// };
 
-const obj2 = {
-    city: "Волжкий",
-    street: "40 лет победы",
-};
+// const obj2 = {
+//     city: "Волжкий",
+//     street: "40 лет победы",
+// };
 
-const objAll = { ...obj1, ...obj2};
-console.log(objAll);
+// const objAll = { ...obj1, ...obj2};
+// console.log(objAll);
+
+// import { greet, add, PI } from "./utils.js";
+// console.log("Модули");
+// console.log(greet("Тимур"));
+// console.log("5 + 3 = ", add(5, 3));
+// console.log("Значение PI:", PI);
+
+// import { multiply as умножить } from "./utils.js";
+// console.log("Умножение:", умножить(4, 7));
+
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Ника"));
+// console.log("Умножение:", Utils.multiply(3, 9));
+
+import { square, cube, E } from "./math.js";
+console.log("Квадрат числа 3:", square(3));
+console.log("Куб числа 3:", cube(3));
+console.log("Значение E:", E);
